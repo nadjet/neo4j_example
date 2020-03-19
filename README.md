@@ -2,7 +2,18 @@
 
 This repository contains the input csv and Cypher queries to create and manipulate a graph database about olympic athletes in [Neo4j](https://neo4j.com/).
 
-The original csv is a Kaggle Dataset available [here](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results), which was scraped from a sports enthusiasts website. The dataset is included in this present repository as (1) some irrelevant and/or duplicate rows were removed, (2) a row id is included as a column to be used a the unique property on the participation node (see below).
+The original csv is a Kaggle Dataset available [here](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results), which was scraped from a sports enthusiasts website. The dataset is included in this present repository as (1) some irrelevant and/or duplicate rows were removed, (2) a row id is added as a column to be used a the unique property on the participation node (see below).
+
+A sample of the csv is as follows:
+
+<small>
+
+| ID | Name                               | Sex | Age | Height | Weight | Team           | NOC | Games       | Year | Season | City           | Sport                | Event                                               | Medal |
+|----|------------------------------------|-----|-----|--------|--------|----------------|-----|-------------|------|--------|----------------|----------------------|-----------------------------------------------------|-------|
+| 4  | Edgar Lindenau Aabye               | M   | 34  | NA     | NA     | Denmark/Sweden | DEN | 1900 Summer | 1900 | Summer | Paris          | Tug-Of-War           | Tug-Of-War Men's Tug-Of-War                         | Gold  |
+| 5  | Christine Jacoba Aaftink           | F   | 21  | 185    | 82     | Netherlands    | NED | 1988 Winter | 1988 | Winter | Calgary        | Speed Skating        | Speed Skating Women's 500 metres                    | NA    |
+| 5  | Christine Jacoba Aaftink           | F   | 21  | 185    | 82     | Netherlands    | NED | 1988 Winter | 1988 | Winter | Calgary        | Speed Skating        | Speed Skating Women's 1,000 metres                  | NA    |
+</small>
 
 ## Contents
 
